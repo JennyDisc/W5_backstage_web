@@ -1,0 +1,31 @@
+.article-list {
+    .list-group{
+        width: 320px;
+    }
+    li:nth-child(1){
+        border-radius: 2px 2px 0px 0px;
+    }
+    li:nth-child(4){
+        border-radius: 0px 0px 2px 2px;
+    }
+}
+
+.article-content{
+    .a-index{
+        margin-bottom: 16px;
+    }
+    a:hover{
+        color: $success;
+    }
+}
+
+.download{
+    border-radius: 2px;
+}
+
+.footer-button{
+    padding: 8px 32px;
+    border-radius: 2px;
+}
+
+

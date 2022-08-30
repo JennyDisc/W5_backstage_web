@@ -1,0 +1,356 @@
+---
+title: 後台表單設計
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="content dist-ml-296">
+    <div class="container-fluid ps-6 pe-6">
+
+        <!-- 中間上半部選單 -->
+        <header class="mt-6 mb-6 d-flex">
+            <h2 class="fs-4 lh-xs fw-bold d-inline-block  dist-mr-50">Admin</h2>
+            <div class="d-flex justify-content-between align-items-center w-100">
+
+                <div>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <span class="material-symbols-outlined align-middle arrow-icon me-2">
+                            add
+                        </span>
+                        Add New Admin
+                    </a>
+                </div>
+
+                <ul>
+                    <li class="d-flex">
+                        <a href="#" class="me-4">
+                            <span class="material-symbols-outlined align-middle icon">
+                                search
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="material-symbols-outlined align-middle icon">
+                                notifications_active
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <table class="table table-hover mt-3 dist-mb-63">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <p class="d-flex align-items-center">ID
+                                <a href="#" class="ms-2">
+                                    <span class="material-symbols-outlined align-middle arrow-icon">
+                                        arrow_downward
+                                    </span>
+                                </a>
+                            </p>
+                        </th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Verified</th>
+                        <th scope="col"> </th>
+                    </tr>
+                </thead>
+                <tbody class="fw-normal">
+                    <tr>
+                        <th scope="row">#1</th>
+                        <td>Emir Wicks</td>
+                        <td>emir.wicks@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#2</th>
+                        <td>Zaina Goldsmith</td>
+                        <td>zaina.goldsmith@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">#3</th>
+                        <td>Mahima Lopez</td>
+                        <td>mahima.lopez@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#4</th>
+                        <td>Pharrell Murray</td>
+                        <td>pharrell.murray@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#5</th>
+                        <td>Annika Mcbride</td>
+                        <td>annika.mcbride@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#6</th>
+                        <td>Fatimah Clark</td>
+                        <td>fatimah.clark@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#7</th>
+                        <td>Klaudia Rhodes</td>
+                        <td>klaudia.rhodes@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#8</th>
+                        <td>Tillie Lucero</td>
+                        <td>tillie.lucero@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#9</th>
+                        <td>Sabrina Stephenson</td>
+                        <td>sabrina.stephenson@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#10</th>
+                        <td>Annie Smith</td>
+                        <td>annie.smith@mail.com</td>
+                        <td>Yes</td>
+                        <td class="text-end d-flex flex-row justify-content-end">
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined me-4">
+                                    visibility
+                                </span>
+                            </a>
+                            <a href="#" class="icon">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer class="mb-6">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end fw-normal">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span class="material-symbols-outlined fs-6 align-middle">
+                                arrow_back_ios
+                            </span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span class="material-symbols-outlined fs-6 align-middle">
+                                arrow_forward_ios
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+</div>
+
+<!-- Scrollable modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-4 fw-bold lh-xs" id="exampleModalLabel">New Admin</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fs-5 lh-s fw-bold mb-3">Account</p>
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label fs-9 fw-normal lh-m">Name</label>
+                    <input type="name" class="form-control mb-3" id="exampleFormControlInput1">
+                    <label for="exampleFormControlInput2" class="form-label fs-9 fw-normal lh-m">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2">
+                </div>
+                <div class="border-bottom border-light-high4 modal-body-border"></div>
+                <div>
+                    <p class="fs-5 lh-s fw-bold mb-3">Verification</p>
+                    <p class="lh-lg dist-mb-18">
+                        <span class="material-symbols-outlined text-danger me-2 align-middle">
+                            warning
+                        </span>
+                        Unverified
+                    </p>
+                    <button type="button" class="btn btn-outline-success fw-bold footer-button w-100">Send Verification
+                        Mail</button>
+                </div>
+                <div class="border-bottom border-light-high4 modal-body-border"></div>
+                <div>
+                    <p class="fs-5 lh-s fw-bold mb-3">Access Level</p>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>-Choose access level-</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="border-bottom border-light-high4 modal-body-border"></div>
+                <div>
+                    <p class="fs-5 lh-s fw-bold mb-3">Custom Access</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label fs-6 fw-normal" for="flexCheckDefault">
+                            Lecture
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                        <label class="form-check-label fs-6 fw-normal" for="flexCheckDefault2">
+                            Coupon
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                        <label class="form-check-label fs-6 fw-normal" for="flexCheckDefault3">
+                            Message
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                        <label class="form-check-label fs-6 fw-normal" for="flexCheckDefault4">
+                            Setting
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                        <label class="form-check-label fs-6 fw-normal" for="flexCheckDefault5">
+                            Task Menu
+                        </label>
+                    </div>
+                </div>
+                <div class="border-bottom border-light-high4 modal-body-border"></div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success fw-bold footer-button"
+                    data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-outline-success fw-bold footer-button">Add</button>
+            </div>
+        </div>
+    </div>
+</div>

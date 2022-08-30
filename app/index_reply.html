@@ -1,0 +1,180 @@
+---
+title: 後台表單設計
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="content dist-ml-296">
+  <div class="container-fluid ps-6 pe-6">
+
+    <!-- 中間上半部選單 -->
+    <header class="mt-6 mb-6 d-flex">
+      <h2 class="fs-4 lh-xs fw-bold d-inline-block  dist-mr-50">Assignment</h2>
+      <div class="d-flex justify-content-between align-items-center w-100">
+
+        <div class="dropdown">
+          <a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            All Courses
+            <span class="material-symbols-outlined align-middle arrow-icon">
+              expand_more
+            </span>
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">All Courses</a></li>
+          </ul>
+        </div>
+
+        <ul>
+          <li class="d-flex">
+            <a href="#" class="me-4">
+              <span class="material-symbols-outlined align-middle icon">
+                search
+              </span>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined align-middle icon">
+                notifications_active
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 文章篩選列 -->
+    <aside class="d-flex justify-content-between dist-mb-6">
+      <div class="dropdown dist-mr-560">
+        <a class="btn fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          All (4)
+          <span class="material-symbols-outlined align-middle arrow-icon">
+            expand_more
+          </span>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">All (4)</a></li>
+        </ul>
+      </div>
+
+      <p class="fs-8 lh-lg fw-normal text-secondary">2 comments</p>
+    </aside>
+
+
+    <!-- 文章左側列表 -->
+    <div class="d-flex justify-content-between">
+      <aside class="fw-normal article-list me-3">
+        <ul class="list-group">
+          <li>
+            <a href="#" class="list-group-item list-group-item-action dist-p12">
+              <div class="d-flex justify-content-between fs-8 lh-lg">
+                <p class="mb-1">Chapter Assignment 2</p>
+                <p class="mb-1">4 hrs ago</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="m-0 fw-bold">Please check this file…</p>
+                <p class="m-0 fs-8 lh-lg text-secondary">Emily Wang</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action dist-p12">
+              <div class="d-flex justify-content-between fs-8 lh-lg">
+                <p class="mb-1">Chapter Assignment 1</p>
+                <p class="mb-1">12 hrs ago</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="m-0 fw-bold">My Homework</p>
+                <p class="m-0 fs-8 lh-lg text-secondary">David Xu</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action dist-p12">
+              <div class="d-flex justify-content-between fs-8 lh-lg">
+                <p class="mb-1">Final Assignment</p>
+                <p class="mb-1">18 hrs ago</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="m-0 fw-bold">Have a problem with this…</p>
+                <p class="m-0 fs-8 lh-lg text-secondary">Tony Wei</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="list-group-item list-group-item-action dist-p12">
+              <div class="d-flex justify-content-between fs-8 lh-lg">
+                <p class="mb-1">Final Assignment</p>
+                <p class="mb-1">19 hrs ago</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="m-0 fw-bold">Did I do it right?</p>
+                <p class="m-0 fs-8 lh-lg text-secondary">Christina Lin</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- 文章右側內容 -->
+      <main>
+        <div class="card">
+          <ul class="d-flex justify-content-between card-header">
+            <li>
+              <p class="fs-8 fw-normal lh-lg">Chapter Assignment 2 / HTML&CSS</p>
+              <p>Please check this file for me, thanks!</p>
+            </li>
+            <li class="d-flex align-items-center">
+              <a href="#">
+                <span class="material-symbols-outlined fw-bold icon">
+                  more_vert
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="card-body article-content">
+            <li class="d-flex justify-content-between">
+              <div>
+                <img src="./assets/images/emilywang.jpeg" alt="作者大頭照" class="photo-radius me-2">
+              </div>
+              <div class="border-bottom border-light-high4 reply">
+                <h3 class="fs-6 fw-bold lh-base dist-mb-4">Emily Wang</h3>
+                <p class="fs-8 lh-lg fw-normal text-secondary mb-3">10:38 AM (4 hours ago)</p>
+                <p class="fs-9 fw-normal mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes
+                  a question: Why in the following code the height of the div is bigger than the height of the <code
+                    class="fs-9 fw-normal text-success bg-light">img</code>? There is a gap below the image, but it
+                  doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                <a href="#" download="HW-2-David.zip"
+                  class="btn btn-light btn-outline-light-high4 download p-2 pb-2 ps-3 pe-3 mb-3">
+                  <span class="material-symbols-outlined fw-bold me-2 align-middle">
+                    attach_file
+                  </span>
+                  HW-2-David.zip
+                </a>
+              </div>
+            </li>
+          </ul>
+          <!-- placeholder寫法1.textarea -->
+          <!-- <textarea name="content" id="editor" cols="30" rows="10" placeholder="Reply an answer…"></textarea> -->
+
+          <!-- placeholder寫法2.在js設定 -->
+          <div id="editor"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="mt-3 mb-6">
+      <div class="d-flex flex-row justify-content-end">
+        <a href="./index.html">
+          <button type="button" class="btn btn-outline-success me-3 footer-button">Cancel</button>
+        </a>
+        <button type="button" class="btn btn-success footer-button">Reply</button>
+    </footer>
+
+
+  </div>
+
+</div>

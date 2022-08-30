@@ -1,0 +1,16 @@
+// 大頭照
+.photo-radius{
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+// icon顏色設定
+.arrow-icon{
+    color: #198754;
+}
+
+.icon:hover{
+    color: $success;
+}
