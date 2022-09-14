@@ -12715,6 +12715,10 @@ body, p {
   border-radius: 0px 0px 2px 2px;
 }
 
+.article-list .list-group-item + .list-group-item {
+  border-top-width: 0;
+}
+
 .article-content .a-index {
   margin-bottom: 16px;
 }
