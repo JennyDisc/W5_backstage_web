@@ -1,31 +1,37 @@
 .article-list {
-    .list-group{
+    .list-group {
         width: 320px;
     }
-    li:nth-child(1){
+
+    li:nth-child(1) {
         border-radius: 2px 2px 0px 0px;
     }
-    li:nth-child(4){
+
+    li:nth-child(4) {
         border-radius: 0px 0px 2px 2px;
+    }
+
+    // 文章左側列表區塊邊線，相連處不要有線條重疊
+    .list-group-item+.list-group-item {
+        border-top-width: 0;
     }
 }
 
-.article-content{
-    .a-index{
+.article-content {
+    .a-index {
         margin-bottom: 16px;
     }
-    a:hover{
+
+    a:hover {
         color: $success;
     }
 }
 
-.download{
+.download {
     border-radius: 2px;
 }
 
-.footer-button{
+.footer-button {
     padding: 8px 32px;
     border-radius: 2px;
 }
-
-
